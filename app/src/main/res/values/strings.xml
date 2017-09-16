@@ -1,0 +1,31 @@
+<resources>
+    <string name="app_name">empresa_xyz</string>
+    <string name="sexo">Escoga Sexo</string>
+    <string name="tipozapato">Elija Tipo De Zapato</string>
+    <string name="cantidad">Cantidad</string>
+    <string name="total">Calcular Total</string>
+    <string name="masculino">Masculino</string>
+    <string name="femenino">Femenino</string>
+    <string name="zapatilla">Zapatilla</string>
+    <string name="clasico">Clasico</string>
+    <string name="zapatos">Marca Zapato</string>
+    <string name="nike">Nike</string>
+    <string name="adidas">Adidas</string>
+    <string name="puma">Puma</string>
+    <string name="error_vacio">Digite la cantidad</string>
+    <string name="error_cero">Valor no puede ser cero</string>
+    <string name="borrar">BORRAR</string>
+    <string-array name="sexo">
+        <item>@string/masculino</item>
+        <item>@string/femenino</item>
+    </string-array>
+    <string-array name="tipo">
+        <item>@string/zapatilla</item>
+        <item>@string/clasico</item>
+    </string-array>
+    <string-array name="zapato">
+        <item>@string/nike</item>
+        <item>@string/adidas</item>
+        <item>@string/puma</item>
+    </string-array>
+</resources>

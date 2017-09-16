@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">empresa_xyz</string>
+    <string name="adidas">Adidas</string>
+    <string name="borrar">CLEAR</string>
+    <string name="cantidad">Quantity</string>
+    <string name="clasico">Clasic</string>
+    <string name="error_cero">Value is not zero</string>
+    <string name="error_vacio">Enter Quantity</string>
+    <string name="femenino">Femenine</string>
+    <string name="masculino">Masculine</string>
+    <string name="nike">Nike</string>
+    <string name="puma">Puma</string>
+    <string name="sexo">Choose Sex</string>
+    <string name="tipozapato">Choose style shoes</string>
+    <string name="total">Calculate Total</string>
+    <string name="zapatilla">Slipper</string>
+    <string name="zapatos">Brand</string>
+</resources>
