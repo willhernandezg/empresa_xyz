@@ -49,7 +49,7 @@ public class Principal extends AppCompatActivity {
     public void total(View v) {
 
         int opsexo, optipo, opmarca;
-        double res = 0, uni = 0,cant =0;
+        double res = 0, unit = 0,cant =0;
 
         if (validar()) {
 
@@ -64,32 +64,26 @@ public class Principal extends AppCompatActivity {
                         case 0:
                             switch (opmarca) {
                                 case 0:
-                                    uni = 120000;
-                                    res = cant * 120000;
+                                    res = Metodos.total_masculino_zapatillas_nike(0,0,0,Integer.parseInt(cantidad.getText().toString()));
                                     break;
                                 case 1:
-                                    uni = 140000;
-                                    res = cant * 140000;
+                                    res = Metodos.total_masculino_zapatillas_adidas(0,0,1,Integer.parseInt(cantidad.getText().toString()));
                                     break;
                                 case 2:
-                                    uni = 130000;
-                                    res = cant * 130000;
+                                    res = Metodos.total_masculino_zapatillas_puma(0,0,2,Integer.parseInt(cantidad.getText().toString()));
                                     break;
                             }
                             break;
                         case 1:
                             switch (opmarca) {
                                 case 0:
-                                    uni = 50000;
-                                    res = cant * 50000;
+                                    res = Metodos.total_masculino_clasico_nike(0,1,0,Integer.parseInt(cantidad.getText().toString()));
                                     break;
                                 case 1:
-                                    uni = 80000;
-                                    res = cant * 80000;
+                                    res = Metodos.total_masculino_clasico_adidas(0,1,1,Integer.parseInt(cantidad.getText().toString()));
                                     break;
                                 case 2:
-                                    uni = 100000;
-                                    res = cant * 100000;
+                                    res = Metodos.total_masculino_clasico_puma(0,1,2,Integer.parseInt(cantidad.getText().toString()));
                                     break;
                             }
                     }
@@ -99,38 +93,32 @@ public class Principal extends AppCompatActivity {
                         case 0:
                             switch (opmarca) {
                                 case 0:
-                                    uni = 100000;
-                                    res = cant * 100000;
+                                    res = Metodos.total_femenino_zapatillas_nike(1,0,0,Integer.parseInt(cantidad.getText().toString()));
                                     break;
                                 case 1:
-                                    uni = 130000;
-                                    res = cant * 130000;
+                                    res = Metodos.total_femenino_zapatillas_adidas(1,0,1,Integer.parseInt(cantidad.getText().toString()));
                                     break;
                                 case 2:
-                                    uni = 110000;
-                                    res = cant * 110000;
+                                    res = Metodos.total_femenino_zapatillas_puma(1,0,2,Integer.parseInt(cantidad.getText().toString()));
                                     break;
                             }
                             break;
                         case 1:
                             switch (opmarca) {
                                 case 0:
-                                    uni = 60000;
-                                    res = cant * 60000;
+                                    res = Metodos.total_femenino_clasico_nike(1,1,0,Integer.parseInt(cantidad.getText().toString()));
                                     break;
                                 case 1:
-                                    uni = 70000;
-                                    res = cant * 70000;
+                                    res = Metodos.total_femenino_clasico_adidas(1,1,1,Integer.parseInt(cantidad.getText().toString()));
                                     break;
                                 case 2:
-                                    uni = 120000;
-                                    res = cant * 120000;
+                                    res = Metodos.total_femenino_clasico_puma(1,1,2,Integer.parseInt(cantidad.getText().toString()));
                                     break;
                             }
                     }
                     break;
             }
-            cajasubtotal.setText("TOTAL UNIT = $" + uni);
+            //cajasubtotal.setText("TOTAL UNIT = $" + unit);
             cajatotal.setText("TOTAL = $"  + res);
         }
     }
